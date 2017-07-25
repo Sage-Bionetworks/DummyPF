@@ -36,7 +36,7 @@ deploy:
   bucket_name: org-sagebridge-bridgepf-deployment-dummypf-$TRAVIS_BRANCH
   zip_file: target/universal/bridgepf-0.1-SNAPSHOT.zip
   region: us-east-1
-  app: dummypf-develop-application
+  app: dummypf-$TRAVIS_BRANCH-application
   env:
     develop: dummypf-develop
     uat: dummypf-uat
